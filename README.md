@@ -4,11 +4,23 @@
 
 动画从 ChatGPT 标志与文字开始，通过连续字形翻转过渡为 Codex，镜头推进至 Codex Logo 内部符号并自然接管为输入框，随后近景平滑跟随输入文字，直至语音与发送按钮进入画面。
 
-## 本地运行
+## 下载后在 Remotion 中打开
+
+需要先安装 [Node.js 20 或更高版本](https://nodejs.org/) 和 Git。
 
 ```bash
-npm install
-npm run dev
+git clone https://github.com/Wh1tZz/Tibo-Please.git
+cd Tibo-Please
+npm ci
+npm run studio
+```
+
+如果通过 GitHub 的 **Download ZIP** 下载，解压后进入 `Tibo-Please` 文件夹，从 `npm ci` 开始执行即可。
+
+`npm` 只负责按照仓库中的 `package-lock.json` 安装固定版本依赖并调用项目内的 Remotion。启动 Studio 的等价直接命令是：
+
+```bash
+npx remotion studio
 ```
 
 Remotion Studio 中的 Composition ID 为 `Tibo-Please`。
@@ -20,6 +32,12 @@ npm run render
 ```
 
 视频将输出到 `out/Tibo-Please.mp4`。
+
+等价的 Remotion 直接命令为：
+
+```bash
+npx remotion render Tibo-Please out/Tibo-Please.mp4 --codec=h264
+```
 
 ## 结构
 
