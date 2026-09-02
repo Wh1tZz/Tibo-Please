@@ -1,0 +1,30 @@
+{
+  "name": "tibo-please",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A 60 FPS Remotion motion piece transitioning from ChatGPT to Codex and into an interactive prompt field.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render Tibo-Please out/Tibo-Please.mp4 --codec=h264"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.520",
+    "@remotion/fonts": "4.0.520",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.520",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.1",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
